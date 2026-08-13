@@ -8,9 +8,22 @@
     <meta name="description" content="Vayutra Logistics - Delhi-based transportation and supply chain company specializing in FTL, PTL, express cargo, and industrial logistics across 26 cities in India." />
     <title>Vayutra Logistics | Moving Commerce, Connecting Destinations</title>
     <link rel="apple-touch-icon" href="/logo.webp" />
-  </head>
+    <meta property="og:image" content="https://bolt.new/static/og_default.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+</head>
   <body>
     <div id="root"></div>
+    <script>
+      // GitHub Pages SPA: restore the real path from the 404.html redirect
+      (function () {
+        var q = window.location.search.match(/[?&]p=([^&]+)/);
+        if (q) {
+          var path = decodeURIComponent(q[1]);
+          window.history.replaceState(null, '', '/TEMPL-vayutra-moving-company' + path + window.location.hash);
+        }
+      })();
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

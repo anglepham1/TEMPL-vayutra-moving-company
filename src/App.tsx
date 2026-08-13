@@ -15,7 +15,7 @@ import { NotFoundPage } from "@/pages/not-found"
 
 export function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/TEMPL-vayutra-moving-company">
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<HomePage />} />
